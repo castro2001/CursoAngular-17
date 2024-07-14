@@ -1,23 +1,43 @@
 <div class="container">
-    <header class="grid-menu">
-        <nav class="menu">
-            <ul class="menu ul">
-                <li class="menu-ul_item">Dashboard</li>
-                <li class="menu-ul_item">Products</li>
-                <li class="menu-ul_item">Ventas</li>
-            </ul>
-        </nav>
-    </header>
-    <section class="grid-header">
-        <header class="header">
-            <div>
-                <label  class="header_title">Hola Alexander
-                    <p class="header_hour">4:455 pm</p>
-                </label>
-            </div>
-            <div class="header_user">
-                <img src="" alt="" srcset="">
-            </div>
-        </header>
-    </section>
+    <div class="grid-menu">
+       <app-menu/>
+    </div>
+    <div class="grid-header">
+        <app-header/>
+    </div>
+
+    <div class="grid-main">
+        <main class="main">
+            <h1>Contenido</h1>
+            <br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam debitis maiores blanditiis soluta maxime laudantium repudiandae incidunt,
+                         deleniti sint porro nihil, sunt similique optio. Dolorum reprehenderit ab laboriosam voluptates dicta cumque sunt ipsum voluptatem harum ut sequi pariatur, 
+                         doloribus tempora illum a? Maxime sequi quam accusantium facere eligendi iste, ut nulla ipsum quae similique enim, quas tempore vel quaerat quis. Incidunt cum,
+                          cumque mollitia facere quae eligendi ipsa asperiores assumenda perferendis inventore unde id quidem amet tempore, minima maxime optio recusandae alias cupiditate,
+                           animi voluptate praesentium. Officia et dolorum illum eligendi corrupti cum, tenetur minus eaque vero a eum nostrum in corporis id rerum. Necessitatibus iusto temporibus 
+                           suscipit ab dicta, error aliquid qui animi, dignissimos, amet assumenda quia unde delectus dolorem tempore voluptates ut aperiam deleniti veniam vel aspernatur quae enim
+                            laboriosam? Accusantium accusamus enim, aliquam est consectetur quae libero tempore, quos deleniti ipsam quia illo vero voluptatum voluptatem vel iusto neque!
+                             Enim ipsa corrupti aspernatur repellat perspiciatis hic odit in! Illum cum laboriosam commodi consectetur officia nihil quasi aliquam rerum nisi omnis quidem provident vero at,
+                              dolores et fugit! Inventore neque iure culpa, facere nostrum molestias asperiores iusto iste rem dolorum, voluptate, harum tempora. Laudantium numquam, nam ipsum commodi praesentium
+                               animi est incidunt. Officia dolores suscipit ullam quisquam eaque illo quos. Dolorem, a itaque dolorum ipsa nemo delectus magni officiis suscipit, animi placeat eaque dicta
+                                iusto possimus praesentium neque? Odit aliquam excepturi, voluptates dicta possimus commodi saepe harum sapiente maxime repellat eos earum laboriosam, perspiciatis quae,
+                                 corporis iure! Amet, laboriosam officiis consequuntur delectus similique eius quasi.</p>
+        <!--
+
+            
+        <input type="text" placeholder="Ingresa tus nombres" [(ngModel)]="inputName" />
+			<span>Nombre ingresado: {{ inputName }} </span>
+            
+            
+        
+            -->
+            <br>
+            <h2>Two databinding</h2>
+            <input type="text" placeholder="{{input}}" [(ngModel)]="inputName">
+            <br>
+            <span>Two databinding <br>Nombre ingresado: {{ inputName }} </span>
+	        <br>
+			<button (click)="click()">cambiar valor</button>
+        </main>
+    </div>
 </div>

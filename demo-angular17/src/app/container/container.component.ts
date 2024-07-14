@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ContainerComponent {
 
+  input= "Ingrese su nombres"
+  inputName=""
+
+  click():void{
+    this.inputName = "Nuevo valor "
+  }
 }

@@ -1,0 +1,36 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &__title{
+        font-weight: bold;
+        color: cadetblue;
+        font-size: 1.2rem;
+    }
+    &__hour{
+        color: #707eae;
+        font-size: .8rem;
+        font-weight: 500;
+    }
+    .header-user{
+        display: flex;
+        gap: 1em;
+        align-items: flex-start;
+
+        &-notification{
+            background-color: white;
+			border-radius: 8px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0.7em;
+			cursor: pointer;
+
+        }
+        &__user {
+			width: 48px;
+			height: 48px;
+		}
+    }
+}

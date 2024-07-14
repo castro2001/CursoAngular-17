@@ -7,7 +7,7 @@ import { ContainerModule } from './container/container.module';
   standalone: true,
   imports: [RouterOutlet,ContainerModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'demo-angular17';
